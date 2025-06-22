@@ -20,7 +20,7 @@ import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
-import { FormControl, InputLabel, Input, FormHelperText } from '@mui/material';
+// import { FormControl, InputLabel, Input, FormHelperText } from '@mui/material';
 
 // Material-UI icons
 import FirstPageIcon from '@mui/icons-material/FirstPage';
@@ -254,7 +254,7 @@ export default function Home() {
           <Box component="form" noValidate autoComplete="off">
             <Grid container spacing={3}>
               {/* Name Field */}
-              <Grid item xs={12}>
+              <Grid item xs={12} component={undefined as any}>
                 <TextField
                   fullWidth
                   label="Name"
@@ -264,7 +264,7 @@ export default function Home() {
               </Grid>
 
               {/* Calories Field */}
-              <Grid item xs={12}>
+              <Grid item xs={12} component={undefined as any}>
                 <TextField
                   fullWidth
                   label="Calories"
@@ -274,7 +274,7 @@ export default function Home() {
               </Grid>
 
               {/* Fat Field */}
-              <Grid item xs={12}>
+              <Grid item xs={12} component={undefined as any}>
                 <TextField
                   fullWidth
                   label="Fat"
@@ -283,9 +283,9 @@ export default function Home() {
                 />
               </Grid>
               {/* Buttons */}
-              <Grid item xs={12}>
+              <Grid item xs={12} component={undefined as any}>
                 <Grid container justifyContent="space-between" spacing={2}>
-                  <Grid item xs={5}>
+                  <Grid item xs={5} component={undefined as any}>
                     <Button
                       fullWidth
                       variant="contained"
@@ -299,7 +299,7 @@ export default function Home() {
                       Submit
                     </Button>
                   </Grid>
-                  <Grid item xs={5}>
+                  <Grid item xs={5} component={undefined as any}>
                     <Button
                       fullWidth
                       variant="outlined"
